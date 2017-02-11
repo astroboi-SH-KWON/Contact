@@ -1,0 +1,44 @@
+
+EditText etID,etPass,etName,etPhone,etAddr;
+Button btSubmit,btCancel;
+
+
+처음 github에 올릴때
+
+git init
+git add -A
+git commit -m "170211_12:00"
+git remote add origin https://github.com/terry007x/Contact.git
+git push -u origin master
+
+
+같은 폴더 내용을 업데이트 할 때
+
+git add -A
+git commit -m "170211_15:00"
+git push -u origin master
+
+
+RadioButton rbCalendar,rbClock;
+CalendarView cvSet;
+TimePicker tpSet;
+Button btSet
+TextView tvYear ,tvMonth,tvDate,tvHour,tvMinute;
+
+
+
+INSERT INTO table_name VALUES (value1,value2,value3,...);
+
+
+UPDATE table_name SET column1=value1,column2=value2,... WHERE some_column=some_value;
+
+DELETE FROM table_name WHERE some_column=some_value;
+
+CREATE TABLE table_name
+(
+column_name1 data_type(size),
+column_name2 data_type(size),
+column_name3 data_type(size),
+....
+);
+
