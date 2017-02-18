@@ -8,14 +8,19 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.hanbit.app.contactapp.presentation.SignupActivity;
+import com.hanbit.app.contactapp.service.MemberService;
+import com.hanbit.app.contactapp.service.MemberServiceImpl;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{//imp후 23행 오버라이딩, 18행 19행 리스너
     Button btSignUp, btSignIn;//변수 선언(초기화는 15행부터 16행)
+    MemberService service;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);//res의 activity_main.xml을 보여주는 중
+
+        service=new MemberServiceImpl(this.getApplicationContext());
 
         btSignUp= (Button) findViewById(R.id.btSignIn);//field 8행에 선언한 변수값 초기화
         btSignIn= (Button) findViewById(R.id.btSignUp);
